@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZpc{} Calculo de la PDF}
+\PYG{n}{x}         \PYG{p}{=} \PYG{n}{rx\PYGZus{}symbols}\PYG{p}{(:,}\PYG{n}{k}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{n}{const}\PYG{p}{(}\PYG{n}{n}\PYG{p}{,:)}\PYG{o}{\PYGZsq{}}\PYG{p}{;}
+\PYG{n}{dists2}\PYG{p}{(}\PYG{n}{n}\PYG{p}{)} \PYG{p}{=} \PYG{n}{x}\PYG{o}{\PYGZsq{}} \PYG{o}{*} \PYG{n}{invC} \PYG{o}{*} \PYG{n}{x}\PYG{p}{;}
+\end{Verbatim}

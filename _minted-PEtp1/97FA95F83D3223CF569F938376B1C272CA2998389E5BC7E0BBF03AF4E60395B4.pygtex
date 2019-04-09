@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{C}       \PYG{p}{=} \PYG{p}{[}\PYG{l+m+mi}{17} \PYG{l+m+mi}{11}\PYG{p}{;} \PYG{l+m+mi}{11} \PYG{l+m+mi}{13}\PYG{p}{];}
+\PYG{c}{\PYGZpc{} Cg    = K*C Matriz de Covarianza}
+\PYG{n}{C}       \PYG{p}{=} \PYG{n}{K}\PYG{o}{*}\PYG{n}{C}\PYG{p}{;}
+\PYG{p}{[}\PYG{n}{U}\PYG{p}{,}\PYG{n}{D}\PYG{p}{,}\PYG{n}{V}\PYG{p}{]} \PYG{p}{=} \PYG{n}{svd}\PYG{p}{(}\PYG{n}{C}\PYG{p}{);}
+\PYG{c}{\PYGZpc{} Queremos calcular U tal que C = U*U\PYGZsq{}}
+\PYG{n}{U}       \PYG{p}{=} \PYG{n}{U}\PYG{o}{*}\PYG{p}{(}\PYG{n}{D}\PYG{o}{.\PYGZca{}}\PYG{l+m+mf}{0.5}\PYG{p}{);}
+\PYG{c}{\PYGZpc{} Vector normal Z con mu\PYGZus{}Z=0 y C\PYGZus{}Z=indentidad}
+\PYG{n}{z\PYGZus{}noise} \PYG{p}{=} \PYG{n+nb}{randn}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{n}{M}\PYG{p}{);}
+\PYG{n}{g\PYGZus{}noise} \PYG{p}{=} \PYG{n}{U}\PYG{o}{*}\PYG{n}{z\PYGZus{}noise}\PYG{p}{;}
+\PYG{c}{\PYGZpc{} Señal trasmistida}
+\PYG{n}{rx\PYGZus{}symbols} \PYG{p}{=} \PYG{n}{tx\PYGZus{}symbols} \PYG{o}{+} \PYG{n}{g\PYGZus{}noise}\PYG{p}{;}
+\end{Verbatim}

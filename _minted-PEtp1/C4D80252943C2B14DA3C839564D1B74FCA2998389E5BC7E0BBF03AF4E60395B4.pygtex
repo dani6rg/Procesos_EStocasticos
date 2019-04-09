@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c}{\PYGZpc{} Receiver A}
+\PYG{n}{RxA\PYGZus{}Const}       \PYG{p}{=} \PYG{p}{[}\PYG{l+m+mi}{1} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{];}
+\PYG{n}{RxA\PYGZus{}dt\PYGZus{}symbols}  \PYG{p}{=} \PYG{n}{detector}\PYG{p}{(}\PYG{n}{rx\PYGZus{}symbols}\PYG{p}{,} \PYG{n}{RxA\PYGZus{}Const}\PYG{p}{);}
+\PYG{n}{RxA\PYGZus{}er\PYGZus{}symbols}  \PYG{p}{=} \PYG{n}{sum}\PYG{p}{(}\PYG{n}{sum}\PYG{p}{(}\PYG{n+nb}{abs}\PYG{p}{(}\PYG{n}{RxA\PYGZus{}dt\PYGZus{}symbols} \PYG{o}{\PYGZhy{}} \PYG{n}{tx\PYGZus{}symbols}\PYG{p}{))} \PYG{o}{\PYGZti{}=} \PYG{l+m+mi}{0}\PYG{p}{);}
+\PYG{n}{RxA\PYGZus{}SER}\PYG{p}{(}\PYG{n}{SNR\PYGZus{}dB}\PYG{p}{)} \PYG{p}{=} \PYG{n}{RxA\PYGZus{}er\PYGZus{}symbols}\PYG{o}{/}\PYG{n}{M}
+\end{Verbatim}
